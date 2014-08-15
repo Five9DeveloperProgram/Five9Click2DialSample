@@ -1,0 +1,53 @@
+<!--
+* Copyright (c) 2014 Five9, Inc. The content presented herein may not, under any
+* circumstances, be reproduced in whole or in any part or form without written
+* permission from Five9, Inc.
+*
+* This program is distributed in the hope that it will be useful, but without
+* any warranty. It is provided "as is" without warranty of any kind, either expressed
+* or implied, including, but not limited to, the implied warranties of merchantability
+* and fitness for a particular purpose. The entire risk as to the quality and performance
+* of the program is with you. Should the program prove defective, you assume the cost of
+* all necessary servicing, repair or correction.
+*
+* Base: Five9 CTI Web Services 8.2.25 WEBAGENT {20140708_0929}
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Five9 Click To Dial Example</title>
+    <link rel="shortcut icon" href="five9.ico">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Latest compiled and minified Bootstrap CSS -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.css">
+
+    <!-- Update jQuery to the latest version to pick up the latest AJAX support -->
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+
+    <!-- Latest compiled and minified Bootstrap JS -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.js"></script>
+
+    <!-- Five9 CTI library -->
+    <script src="Five9ClickToDial.js" type="text/javascript"></script>
+
+
+</head>
+<body>
+<div class="container">
+    <div class="col-md-12">
+        <img class="img center-block" src="five9_logo_small.gif">
+    </div>
+    <form role="form">
+        <h1>Click To Dial Examples</h1>
+        <p>Link Example: <a href="javascript:void(0)" onclick="makeCall(this.innerText);">800-553-8159</a></p>
+
+        <p>Button Example: <button type="button" id="dial" onclick="makeCall(this.innerText);" class="btn btn-default">800-553-8159</button></p>
+
+    </form>
+</div>
+</body>
+</html>
